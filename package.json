@@ -1,0 +1,27 @@
+{
+  "name": "cybershield-platform",
+  "version": "1.0.0",
+  "description": "CyberShield — Cybersecurity Awareness Platform (Complete MERN Stack Application)",
+  "private": true,
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "seed": "npm --prefix backend run seed",
+    "test": "npm --prefix backend run test && npm --prefix frontend run test",
+    "test:backend": "npm --prefix backend run test",
+    "test:frontend": "npm --prefix frontend run test",
+    "start:backend": "npm --prefix backend start",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:frontend": "npm --prefix frontend run build"
+  },
+  "keywords": [
+    "cybersecurity",
+    "mern-stack",
+    "awareness-platform",
+    "security-quizzes",
+    "zero-trust",
+    "education"
+  ],
+  "author": "Antigravity Engineering",
+  "license": "MIT"
+}

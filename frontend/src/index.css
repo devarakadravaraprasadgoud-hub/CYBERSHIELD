@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand-primary: #6D28D9;
+    --brand-primary-hover: #5B21B6;
+    --brand-secondary: #7C3AED;
+    --brand-accent: #8B5CF6;
+    --brand-light: #EDE9FE;
+    --brand-very-light: #F5F3FF;
+    --brand-border: #DDD6FE;
+
+    --surface-app: #F9FAFB;
+    --surface-secondary: #F5F3FF;
+    --surface-card: #FFFFFF;
+    --surface-lavender: #FAF8FF;
+    --surface-selected: #F3E8FF;
+    --surface-disabled: #F3F4F6;
+
+    --text-primary: #1E1B4B;
+    --text-secondary: #475569;
+    --text-muted: #64748B;
+    --text-subtle: #94A3B8;
+
+    --border-default: #E5E7EB;
+    --border-strong: #D1D5DB;
+    --border-purple: #C4B5FD;
+    --focus-ring: #A78BFA;
+  }
+
+  body {
+    @apply bg-[#F9FAFB] text-[#1E1B4B] antialiased font-sans selection:bg-[#EDE9FE] selection:text-[#6D28D9];
+  }
+}
+
+/* Custom Light Purple Minimal UI Styling */
+.cyber-glass {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid #E5E7EB;
+}
+
+.cyber-card {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cyber-card:hover {
+  border-color: #DDD6FE;
+  box-shadow: 0 8px 24px -4px rgba(109, 40, 217, 0.08);
+}
+
+.cyber-glow {
+  box-shadow: 0 0 20px rgba(109, 40, 217, 0.15);
+}
+
+.cyber-glow-success {
+  box-shadow: 0 0 20px rgba(21, 128, 61, 0.15);
+}
+
+.cyber-glow-danger {
+  box-shadow: 0 0 20px rgba(185, 28, 28, 0.15);
+}
+
+/* Custom Scrollbars - Light Purple Minimal */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F9FAFB;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E5E7EB;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C4B5FD;
+}
